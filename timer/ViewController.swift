@@ -17,8 +17,7 @@ class ViewController: UIViewController {
     
     @IBAction func startandstop(_ sender: Any) {
         // 再生ボタンを押すとタイマー作成、始動
-        change2.isHidden = true
-        return2.isHidden = true
+        
         change2.isEnabled = false
         return2.isEnabled = false
         startandstoplabel.setTitle("停止", for: .normal)
@@ -27,8 +26,7 @@ class ViewController: UIViewController {
         else {
             self.timer.invalidate()
             self.timer = nil
-            change2.isHidden = false
-            return2.isHidden = false
+            
             change2.isEnabled = true
             return2.isEnabled = true
             startandstoplabel.setTitle("再生", for: .normal)
